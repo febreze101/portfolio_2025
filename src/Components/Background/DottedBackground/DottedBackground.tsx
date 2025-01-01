@@ -6,10 +6,10 @@ import * as THREE from "three";
 import { useFrame, ThreeEvent } from "@react-three/fiber";
 
 function DottedBackground() {
-  const [mousePos, setMousePos] = useState<[number, number]>([0, 0]);
+  const [, setMousePos] = useState<[number, number]>([0, 0]);
   const fadeValue = useRef<number>(0);
   const isActive = useRef<boolean>(false);
-  const timeoutId = useRef<number | null>(null);
+  const timeoutId = useRef<NodeJS.Timeout | null>(null);
 
   // Custom shader material
   const glowMaterial = useMemo(() => {

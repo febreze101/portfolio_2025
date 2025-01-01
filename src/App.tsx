@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Text } from "@react-three/drei";
 import "./App.css";
 import "./index.css";
 import LandingPage from "./Components/Background/Pages/LandingPage";

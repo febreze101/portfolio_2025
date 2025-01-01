@@ -1,13 +1,4 @@
 import CircularText from "@/Components/CircularText";
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "../../ui/menubar";
 import ModelViewer from "@/Components/3d_camera";
 import IntroSection from "@/Components/TypewriterText";
 

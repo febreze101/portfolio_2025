@@ -9,6 +9,8 @@
     }
   ],
   "compilerOptions": {
+    "types": ["three", "@types/three"],
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@/*": [

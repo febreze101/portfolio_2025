@@ -8,31 +8,29 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "../../ui/menubar";
+import ModelViewer from "@/Components/3d_camera";
+import IntroSection from "@/Components/TypewriterText";
 
 function LandingPage() {
   return (
     <>
       <div className="h-full flex flex-col justify-between">
+
         {/* "Title card" */}
         <div className="flex flex-row h-full justify-between p-12 ">
           <div className="flex items-center">
-            <div>
-              <h1 className="scroll-m-20 pb-2 text-3xl font-serif font-medium tracking-tight first:mt-0">
-                Hello.
-              </h1>
-              <h1 className="scroll-m-20 text-9xl font-medium font-serif italic tracking-tight">
-                My name is.
-              </h1>
-              <h1 className="scroll-m-20 text-9xl pb-3 font-medium font-serif italic tracking-tight">
-                Fabrice.
-              </h1>
-              <h1 className="scroll-m-20 pb-2 text-3xl font-medium font-serif tracking-tight first:mt-0">
-                I am Software Engineer.
-              </h1>
-            </div>
+            <IntroSection />
           </div>
-          <div className="scroll-m-20 text-4xl font-extrabold tracking-tight w-1/2 lg:text-5xl flex justify-center items-center">
-            <h1>Placeholder</h1>
+
+          {/* Side elements (3d) */}
+          <div className="scroll-m-20 text-4xl font-extrabold tracking-tight w-1/2  flex justify-center items-center">
+            <ModelViewer 
+              // modelUrl="src/assets/models/camera.glb"
+              modelUrl="src/assets/models/camera.glb"
+              backgroundColor={'white'}
+              cameraPosition={[0, 0, 5]}
+              autoRotate={true}
+            />
           </div>
         </div>
 

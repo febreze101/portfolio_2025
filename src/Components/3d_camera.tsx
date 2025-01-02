@@ -74,6 +74,6 @@ function ModelViewer({
     )
 }
 
-useGLTF.preload('/src/assets/models/camera.glb');
+useGLTF.preload('/models/camera.glb');
 
 export default ModelViewer;

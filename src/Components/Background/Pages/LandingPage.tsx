@@ -17,7 +17,7 @@ function LandingPage() {
           <div className="scroll-m-20 text-4xl font-extrabold tracking-tight w-1/2  flex justify-center items-center">
             <ModelViewer 
               // modelUrl="src/assets/models/camera.glb"
-              modelUrl="src/assets/models/camera.glb"
+              modelUrl="/models/camera.glb"
               backgroundColor={'white'}
               cameraPosition={[0, 0, 5]}
               autoRotate={true}
